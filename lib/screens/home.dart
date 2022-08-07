@@ -1,13 +1,8 @@
-import 'package:Revelin/classes/constants.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:flutter/material.dart';
 import 'package:Revelin/screens/all_events.dart';
 import 'package:Revelin/screens/all_tickets.dart';
-import 'package:Revelin/screens/event_detail.dart';
 import 'package:Revelin/screens/profile.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -58,9 +53,9 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: CurvedNavigationBar(
         index: 0,
         height: 60.0,
-        items: <Widget>[
-          const Image(
-            image: const AssetImage('img/logo_black.png'),
+        items: const <Widget>[
+          Image(
+            image: AssetImage('img/logo_black.png'),
             height: 30.0,
             width: 30.0,
           ),
@@ -77,7 +72,7 @@ class _HomeState extends State<Home> {
         buttonBackgroundColor: Colors.amberAccent,
         backgroundColor: Colors.black,
         animationCurve: Curves.easeInOut,
-        animationDuration: Duration(milliseconds: 600),
+        animationDuration: const Duration(milliseconds: 600),
         onTap: onButtonPressed,
         letIndexChange: (index) => true,
       ),

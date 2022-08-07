@@ -1,6 +1,6 @@
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+
 
 class Web extends StatefulWidget {
   const Web({Key? key}) : super(key: key);

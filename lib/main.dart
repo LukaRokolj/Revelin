@@ -1,8 +1,5 @@
-import 'package:Revelin/components/navbar.dart';
-import 'package:Revelin/screens/Home.dart';
-import 'package:Revelin/screens/all_tickets.dart';
-import 'package:Revelin/screens/event_detail.dart';
 import 'package:flutter/material.dart';
+import 'package:Revelin/screens/Home.dart';
 
 void main() {
   runApp(const MyApp());

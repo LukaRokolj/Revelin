@@ -1,9 +1,6 @@
-import 'package:Revelin/screens/event_detail.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:Revelin/screens/event_detail.dart';
 
 class AllEvents extends StatefulWidget {
   const AllEvents({Key? key}) : super(key: key);
@@ -25,17 +22,17 @@ class _AllEventsState extends State<AllEvents> {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width,
-                    padding: EdgeInsets.symmetric(vertical: 4, horizontal: 10),
+                    padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
                     child: Text("Events",
                         style: GoogleFonts.comfortaa(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                                 fontSize: 32,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                                 shadows: [
                               Shadow(
                                   color: Colors.white38,
-                                  offset: const Offset(5, 5),
+                                  offset: Offset(5, 5),
                                   blurRadius: 10),
                             ]))),
                   ),
@@ -82,7 +79,7 @@ class _AllEventsState extends State<AllEvents> {
                               child: ClipRRect(
                                   borderRadius: BorderRadius.circular(12),
                                   child: const Image(
-                                    image: const AssetImage('img/shaq.png'),
+                                    image: AssetImage('img/shaq.png'),
                                   )),
                             ),
                           ),
@@ -120,7 +117,7 @@ class _AllEventsState extends State<AllEvents> {
                               child: ClipRRect(
                                   borderRadius: BorderRadius.circular(12),
                                   child: const Image(
-                                    image: const AssetImage('img/mnight.png'),
+                                    image: AssetImage('img/mnight.png'),
                                   )),
                             ),
                           ),
@@ -158,7 +155,7 @@ class _AllEventsState extends State<AllEvents> {
                               child: ClipRRect(
                                   borderRadius: BorderRadius.circular(12),
                                   child: const Image(
-                                    image: const AssetImage('img/gcity.png'),
+                                    image: AssetImage('img/gcity.png'),
                                   )),
                             ),
                           ),
@@ -181,7 +178,7 @@ class _AllEventsState extends State<AllEvents> {
                             "Luminescence",
                             "Jul 25",
                             const Image(
-                              image: const AssetImage('img/luminescence.png'),
+                              image: AssetImage('img/luminescence.png'),
                             )),
                         const SizedBox(
                           height: 15,
@@ -191,7 +188,7 @@ class _AllEventsState extends State<AllEvents> {
                             "Tunesday",
                             "Jul 26",
                             const Image(
-                              image: const AssetImage('img/tunesday.png'),
+                              image: AssetImage('img/tunesday.png'),
                             )),
                         const SizedBox(
                           height: 15,
@@ -201,7 +198,7 @@ class _AllEventsState extends State<AllEvents> {
                             "Why Not",
                             "Jul 26",
                             const Image(
-                              image: const AssetImage('img/ynot.jpeg'),
+                              image: AssetImage('img/ynot.jpeg'),
                             )),
                         const SizedBox(
                           height: 15,
@@ -211,7 +208,7 @@ class _AllEventsState extends State<AllEvents> {
                             "Diesel",
                             "Jul 26",
                             const Image(
-                              image: const AssetImage('img/shaq.png'),
+                              image: AssetImage('img/shaq.png'),
                             )),
                         const SizedBox(
                           height: 15,
@@ -221,7 +218,7 @@ class _AllEventsState extends State<AllEvents> {
                             "Mark Knight",
                             "Jul 26",
                             const Image(
-                              image: const AssetImage('img/mnight.png'),
+                              image: AssetImage('img/mnight.png'),
                             )),
                         const SizedBox(
                           height: 15,
@@ -231,7 +228,7 @@ class _AllEventsState extends State<AllEvents> {
                             "Gorgon City",
                             "Aug 5",
                             const Image(
-                              image: const AssetImage('img/gcity.png'),
+                              image: AssetImage('img/gcity.png'),
                             )),
                         const SizedBox(
                           height: 15,
@@ -302,7 +299,7 @@ Widget buildEventCard(
                     children: [
                       Text(title,
                           style: GoogleFonts.comfortaa(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                   color: Color(0xFFFFD100)))),
@@ -313,7 +310,7 @@ Widget buildEventCard(
                           overflow: TextOverflow.ellipsis,
                           maxLines: 2,
                           style: GoogleFonts.comfortaa(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white70))),
@@ -334,15 +331,15 @@ Widget buildEventCard(
                         },
                         child: Container(
                           decoration: BoxDecoration(
-                              color: Color(0xFFed1555),
+                              color: const Color(0xFFed1555),
                               borderRadius: BorderRadius.circular(8)),
                           padding:
-                              EdgeInsets.symmetric(vertical: 6, horizontal: 12),
+                              const EdgeInsets.symmetric(vertical: 6, horizontal: 12),
                           child: Text("View",
                               overflow: TextOverflow.ellipsis,
                               maxLines: 2,
                               style: GoogleFonts.comfortaa(
-                                  textStyle: TextStyle(
+                                  textStyle: const TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white))),

@@ -1,8 +1,4 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AllTickets extends StatefulWidget {
@@ -25,17 +21,17 @@ class _AllTicketsState extends State<AllTickets> {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width,
-                    padding: EdgeInsets.symmetric(vertical: 4, horizontal: 10),
+                    padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
                     child: Text("All tickets",
                         style: GoogleFonts.comfortaa(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                                 fontSize: 32,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                                 shadows: [
                               Shadow(
                                   color: Colors.white38,
-                                  offset: const Offset(5, 5),
+                                  offset: Offset(5, 5),
                                   blurRadius: 10),
                             ]))),
                   ),
@@ -51,35 +47,35 @@ class _AllTicketsState extends State<AllTickets> {
                             "Luminescence",
                             "July 25th",
                             const Image(
-                              image: const AssetImage('img/luminescence.png'),
+                              image: AssetImage('img/luminescence.png'),
                             )),
                         buildEventCard(
                             context,
                             "Tunesday",
                             "July 26th",
                             const Image(
-                              image: const AssetImage('img/tunesday.png'),
+                              image: AssetImage('img/tunesday.png'),
                             )),
                         buildEventCard(
                             context,
                             "Why Not",
                             "July 26th",
                             const Image(
-                              image: const AssetImage('img/ynot.jpeg'),
+                              image: AssetImage('img/ynot.jpeg'),
                             )),
                         buildEventCard(
                             context,
                             "Diesel",
                             "July 26th",
                             const Image(
-                              image: const AssetImage('img/shaq.png'),
+                              image: AssetImage('img/shaq.png'),
                             )),
                         buildEventCard(
                             context,
                             "Mark Knight",
                             "July 26th",
                             const Image(
-                              image: const AssetImage('img/mnight.png'),
+                              image: AssetImage('img/mnight.png'),
                             )),
                       ],
                     ),
@@ -134,7 +130,7 @@ Widget buildEventCard(
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         image: AssetImage("img/qr_code.png"),
                         fit: BoxFit.cover,
                       ),
@@ -171,7 +167,7 @@ Widget buildEventCard(
                             children: [
                               Text(title,
                                   style: GoogleFonts.comfortaa(
-                                      textStyle: TextStyle(
+                                      textStyle: const TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold,
                                           color: Color(0xFFFFD100)))),
@@ -182,7 +178,7 @@ Widget buildEventCard(
                                   overflow: TextOverflow.ellipsis,
                                   maxLines: 2,
                                   style: GoogleFonts.comfortaa(
-                                      textStyle: TextStyle(
+                                      textStyle: const TextStyle(
                                           fontSize: 16,
                                           fontWeight: FontWeight.bold,
                                           color: Colors.white70))),

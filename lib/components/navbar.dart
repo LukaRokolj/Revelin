@@ -1,15 +1,17 @@
-import 'package:Revelin/screens/home.dart';
-import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:flutter/material.dart';
+import 'package:Revelin/screens/home.dart';
 
 class BottomNavBar extends StatefulWidget {
+  const BottomNavBar({Key? key}) : super(key: key);
+
   @override
   _BottomNavBarState createState() => _BottomNavBarState();
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
   int _page = 0;
-  GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
+  final GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           key: _bottomNavigationKey,
           index: 0,
           height: 60.0,
-          items: <Widget>[
+          items: const <Widget>[
             Icon(
               Icons.add,
               size: 30,
@@ -49,7 +51,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           buttonBackgroundColor: Colors.black,
           backgroundColor: Colors.amber,
           animationCurve: Curves.easeInOut,
-          animationDuration: Duration(milliseconds: 600),
+          animationDuration: const Duration(milliseconds: 600),
           onTap: (index) {
             setState(() {
               _page = index;
@@ -62,8 +64,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                const Home(),
+              children: const <Widget>[
+                Home(),
               ],
             ),
           ),

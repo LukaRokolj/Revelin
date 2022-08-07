@@ -1,9 +1,6 @@
-import 'package:Revelin/screens/all_events.dart';
-import 'package:Revelin/screens/web.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:Revelin/screens/web.dart';
 
 class Profile extends StatefulWidget {
   const Profile({Key? key}) : super(key: key);
@@ -24,17 +21,17 @@ class _ProfileState extends State<Profile> {
           children: [
             Text("Please Log In",
                 style: GoogleFonts.comfortaa(
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                         fontSize: 32,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                         shadows: [
                       Shadow(
                           color: Colors.white38,
-                          offset: const Offset(5, 5),
+                          offset: Offset(5, 5),
                           blurRadius: 10),
                     ]))),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             TextButton(
@@ -49,14 +46,14 @@ class _ProfileState extends State<Profile> {
               },
               child: Container(
                 decoration: BoxDecoration(
-                    color: Color(0xFFed1555),
+                    color: const Color(0xFFed1555),
                     borderRadius: BorderRadius.circular(8)),
-                padding: EdgeInsets.symmetric(vertical: 6, horizontal: 12),
+                padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 12),
                 child: Text("Log In",
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
                     style: GoogleFonts.comfortaa(
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                             fontSize: 28,
                             fontWeight: FontWeight.bold,
                             color: Colors.white))),
